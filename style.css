@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #485460;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #1e272e;
+    text-align: center;
+
+}
+
+nav ul li {
+    font-size: 1.2em;
+    display: inline-block;
+    margin-right: -4px;
+
+}
+
+nav ul li a {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+}
+
+nav ul li a:hover {
+    background-color: #05c46b;
+}
+
+nav ul li a.active {
+    background-color: #0be881;
+    cursor: default;
+}
+
+main a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+main a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+main a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+
+/* Center website */
+.main {
+    font-family: 'Raleway', sans-serif;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px 16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row>.column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*IMG*/
+.content img {
+    height: 20%;
+}
+
+/*tekst*/
+.content h3,
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    margin: 10px;
+    text-align: center;
+}
+
+.content p {
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.content img:hover {
+    opacity: 0.4;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
